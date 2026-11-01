@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup - Poster Bold</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#f3f1ec;color:#222}
+.wrap{max-width:1040px;margin:0 auto;padding:24px 16px 56px}
+.intro h1{margin:0 0 6px;font-size:28px}
+.intro p{margin:0;color:#555;line-height:1.5}
+.state{margin-top:40px}
+.state>h2{margin:0 0 4px;font-size:20px}
+.state>p{margin:0 0 14px;color:#666;font-size:14px}
+.pair{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.item{max-width:100%}
+.item>small{display:block;margin:0 0 6px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.06em;font-size:12px}
+.scroll{overflow-x:auto;max-width:100%;padding-bottom:10px}
+.frame{box-shadow:0 6px 24px rgba(0,0,0,.2);background:#fff}
+.laptop{width:960px;border-radius:12px;overflow:hidden}
+.laptop .bar{height:30px;background:#e3e0d9;display:flex;gap:7px;align-items:center;padding:0 12px}
+.laptop .bar i{width:11px;height:11px;border-radius:50%;background:#bdb8ad;display:block}
+.phone{width:340px;max-width:100%;border:9px solid #1f1f1f;border-radius:36px;overflow:hidden}
+.screen{container-type:inline-size}
+.laptop .d{min-height:540px}
+.phone .d{min-height:680px}
+input,button{font-family:inherit}
+button{cursor:pointer}
+
+.d3{background:#ffd23f;color:#2b1700;display:flex;flex-direction:column;align-items:center;padding:38px 24px;position:relative;overflow:hidden}
+.d3 .blob{position:absolute;border-radius:50%}
+.d3 .b1{width:320px;height:320px;background:#ff8a1f;top:-120px;left:-100px}
+.d3 .b2{width:250px;height:250px;background:#ff6a00;bottom:-100px;right:-70px}
+.d3 .b3{width:120px;height:120px;background:#fff;opacity:.6;top:34%;right:7%}
+.d3 .b4{width:90px;height:90px;border:14px solid #2b1700;bottom:16%;left:6%}
+.d3 h1,.d3 .box,.d3 .msg,.d3 .poster{position:relative;z-index:1}
+.d3 h1{margin:0 0 22px;font-size:46px;font-weight:900;text-transform:uppercase;letter-spacing:.02em;text-shadow:3px 3px 0 #fff;text-align:center}
+.d3 .box{display:flex;width:min(100%,640px);border:4px solid #2b1700;border-radius:14px;background:#fff;box-shadow:6px 6px 0 #2b1700;overflow:hidden}
+.d3 .box input{flex:1;min-width:0;border:0;outline:0;padding:16px 18px;font-size:18px;font-weight:600;background:#fff;color:#2b1700}
+.d3 .box input::placeholder{color:#a08a55}
+.d3 .box button{border:0;border-left:4px solid #2b1700;padding:0 28px;background:#ff6a00;color:#fff;font-size:18px;font-weight:900;text-transform:uppercase}
+.d3 .msg{margin-top:30px;background:#fff;border:4px solid #2b1700;box-shadow:6px 6px 0 #2b1700;border-radius:14px;padding:16px 24px;font-size:21px;font-weight:800;max-width:560px;text-align:center;line-height:1.5}
+.d3 .msg span{font-weight:600;font-size:16px}
+.d3 .poster{margin-top:24px;text-align:center;width:min(100%,780px)}
+.d3 .city{margin:0;font-size:30px;font-weight:900;text-transform:uppercase}
+.d3 .time{margin:2px 0 0;font-weight:700}
+.d3 .big{display:flex;align-items:center;justify-content:center;gap:18px;margin:4px 0 6px}
+.d3 .icon{font-size:110px;line-height:1}
+.d3 .temp{font-size:150px;font-weight:900;line-height:1;text-shadow:6px 6px 0 #fff}
+.d3 .desc{font-size:26px;font-weight:900;text-transform:uppercase;background:#2b1700;color:#ffd23f;display:inline-block;padding:4px 18px;border-radius:8px;margin:0 0 20px}
+.d3 .strip{display:flex;border:4px solid #2b1700;border-radius:14px;background:#fff;overflow:hidden;box-shadow:6px 6px 0 #2b1700}
+.d3 .strip div{flex:1;padding:12px 6px;font-weight:900;font-size:21px;border-left:4px solid #2b1700}
+.d3 .strip div:first-child{border-left:0}
+.d3 .strip small{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;color:#a24a00}
+@container (min-width:521px){
+ .d3 .b4{bottom:auto;top:30%;left:4%}
+}
+@container (max-width:520px){
+ .d3{padding:26px 14px}
+ .d3 h1{font-size:32px}
+ .d3 .box input{padding:14px 12px;font-size:16px}
+ .d3 .box button{padding:0 16px;font-size:15px}
+ .d3 .city{font-size:21px}
+ .d3 .icon{font-size:64px}
+ .d3 .temp{font-size:74px;text-shadow:4px 4px 0 #fff}
+ .d3 .big{gap:8px}
+ .d3 .desc{font-size:20px}
+ .d3 .strip div{font-size:15px;padding:10px 3px}
+ .d3 .msg{font-size:18px}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><header class="intro"><h1>Design: Poster Bold</h1><p>A bright yellow poster with big orange circles, thick outlines and hard shadows. A huge temperature fills the page, with the details in a strip underneath.</p><p>Design only: the buttons do nothing. Each state is shown on a laptop-sized and a phone-sized screen.</p></header><section class="state"><h2>1. Before searching</h2><p>The app title, an empty search box and a Search button.</p><div class="pair"><div class="item"><small>Laptop</small><div class="scroll"><div class="frame laptop"><div class="bar"><i></i><i></i><i></i></div><div class="screen"><div class="d d3"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div><h1>Weather App</h1><form class="box" onsubmit="return false"><input type="text" placeholder="Type a city name" aria-label="City name"><button type="button">Search</button></form></div></div></div></div></div><div class="item"><small>Phone</small><div class="frame phone"><div class="screen"><div class="d d3"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div><h1>Weather App</h1><form class="box" onsubmit="return false"><input type="text" placeholder="Type a city name" aria-label="City name"><button type="button">Search</button></form></div></div></div></div></div></section><section class="state"><h2>2. Loading</h2><p>The same page with a Loading... message.</p><div class="pair"><div class="item"><small>Laptop</small><div class="scroll"><div class="frame laptop"><div class="bar"><i></i><i></i><i></i></div><div class="screen"><div class="d d3"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div><h1>Weather App</h1><form class="box" onsubmit="return false"><input type="text" placeholder="Type a city name" aria-label="City name" value="London"><button type="button">Search</button></form><p class="msg">Loading...</p></div></div></div></div></div><div class="item"><small>Phone</small><div class="frame phone"><div class="screen"><div class="d d3"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div><h1>Weather App</h1><form class="box" onsubmit="return false"><input type="text" placeholder="Type a city name" aria-label="City name" value="London"><button type="button">Search</button></form><p class="msg">Loading...</p></div></div></div></div></div></section><section class="state"><h2>3. Weather result</h2><p>Made-up values: London, 24°C.</p><div class="pair"><div class="item"><small>Laptop</small><div class="scroll"><div class="frame laptop"><div class="bar"><i></i><i></i><i></i></div><div class="screen"><div class="d d3"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div><h1>Weather App</h1><form class="box" onsubmit="return false"><input type="text" placeholder="Type a city name" aria-label="City name" value="London"><button type="button">Search</button></form><section class="poster"><p class="city">London, United Kingdom</p><p class="time">Sunday 1 Nov 2026, 2:30 pm</p><div class="big"><span class="icon">☀️</span><span class="temp">24°C</span></div><p class="desc">Sunny</p><div class="strip"><div><small>Feels like</small>26°C</div><div><small>Humidity</small>48%</div><div><small>Wind</small>12 km/h NW</div></div></section></div></div></div></div></div><div class="item"><small>Phone</small><div class="frame phone"><div class="screen"><div class="d d3"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div><h1>Weather App</h1><form class="box" onsubmit="return false"><input type="text" placeholder="Type a city name" aria-label="City name" value="London"><button type="button">Search</button></form><section class="poster"><p class="city">London, United Kingdom</p><p class="time">Sunday 1 Nov 2026, 2:30 pm</p><div class="big"><span class="icon">☀️</span><span class="temp">24°C</span></div><p class="desc">Sunny</p><div class="strip"><div><small>Feels like</small>26°C</div><div><small>Humidity</small>48%</div><div><small>Wind</small>12 km/h NW</div></div></section></div></div></div></div></div></section><section class="state"><h2>4. City not found</h2><p>A friendly message.</p><div class="pair"><div class="item"><small>Laptop</small><div class="scroll"><div class="frame laptop"><div class="bar"><i></i><i></i><i></i></div><div class="screen"><div class="d d3"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div><h1>Weather App</h1><form class="box" onsubmit="return false"><input type="text" placeholder="Type a city name" aria-label="City name" value="Londn"><button type="button">Search</button></form><p class="msg">😕 Oops! We couldn't find that city.<br><span>Check the spelling and try again.</span></p></div></div></div></div></div><div class="item"><small>Phone</small><div class="frame phone"><div class="screen"><div class="d d3"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div><h1>Weather App</h1><form class="box" onsubmit="return false"><input type="text" placeholder="Type a city name" aria-label="City name" value="Londn"><button type="button">Search</button></form><p class="msg">😕 Oops! We couldn't find that city.<br><span>Check the spelling and try again.</span></p></div></div></div></div></div></section></div>
+</body>
+</html>
